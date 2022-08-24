@@ -13,8 +13,9 @@ fi
 
 echo ${GITHUB_WORKSPACE} 
 which mobsfscan
+file $(which mobsfscan)
 # mobsfscan ${GITHUB_WORKSPACE} --json --output ${OUTPUT_FILE_NAME}
-mobsfscan /github/workspace --json --output ${OUTPUT_FILE_NAME}
-cat ${OUTPUT_FILE_NAME}
+# mobsfscan /github/workspace --json --output ${OUTPUT_FILE_NAME}
+# cat ${OUTPUT_FILE_NAME}
 
 # docker run -v /home/pwned_report/mobsf:/src -e SRC_DIR='/src' -e OUTPUT_FILE_NAME='/result.json' mobsfscan
