@@ -1,5 +1,5 @@
 
-#!/bin/sh
+#!/bin/bash
 
 if [ -z "$SRC_DIR" ]; then
   echo "SRC_DIR is required to run MobSF scan action. (SRC_DIR = $SRC_DIR)"
