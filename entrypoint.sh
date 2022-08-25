@@ -13,7 +13,9 @@ fi
 
 echo ${GITHUB_WORKSPACE} 
 which mobsfscan
+echo ${GITHUB_WORKSPACE}/${OUTPUT_FILE_NAME}
 mobsfscan ${GITHUB_WORKSPACE} --json --output ${GITHUB_WORKSPACE}/${OUTPUT_FILE_NAME}
+ls -la ${GITHUB_WORKSPACE}/${OUTPUT_FILE_NAME}
 # mobsfscan /github/workspace --json --output ${OUTPUT_FILE_NAME}
 # cat ${OUTPUT_FILE_NAME}
 
